@@ -43,8 +43,51 @@
     <article>
         <div class="container">
             <div class="row">
+                <div class="col" style="text-align: center;"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/UcNKEVOAeG4" width="560" height="315" style="text-align: center;"></iframe></div>
+            </div>
+            <div class="row" style="padding-top: 5px;padding-bottom: 5px;">
                 <div class="col">
-                    <h1 style="text-align: center;">How to use Scrapy</h1><iframe src="https://docs.google.com/document/d/e/2PACX-1vQtuc-TBE3b6ehP4Zyr8SMs7z2D0aVUyccxEZty-z-big7zdUdXYNAwGqMU6MsG6dd_fpHeKJ_GCXwd/pub?embedded=true" width=“1000000” height=“718” frameborder=“0” marginheight=“0” marginwidth=“0”>Loading…</iframe>
+                    <p style="margin: 0px;"><br><strong><span style="color: rgb(0, 0, 0); background-color: transparent;">&nbsp;Note: This documentation is meant for a Windows 10 machine with python preinstalled. Quotations are not included when typing in terminal and parentheses in the quotations refer to the unique names that the user is supposed to enter. </span></strong><br><br></p>
+                </div>
+            </div>
+            <div class="row" style="padding-right: 0px;padding-top: 5px;padding-bottom: 5px;">
+                <div class="col">
+                    <p style="margin: 0px;"><span style="color: rgb(0, 0, 0); background-color: transparent;">First, you would want to add a directory where you would save your Scrapy projects and begin with adding a Python virtual environment. This way the python packages you add for this project will not conflict with your system environment. To do this, open up the terminal by searching up the command prompt in the windows start screen and type “cd..” ENTER until the directory on the left hand side is just the disk drive. Then type “python -m venv (your scrapy project directory)” ENTER. Use the image above as an example. Then type “pip install scrapy” ENTER.</span></p>
+                </div>
+                <div class="col"><img width="481" height="281" src="assets/img/1.png" style="width: 602px;"></div>
+            </div>
+            <div class="row" style="padding-bottom: 5px;padding-top: 5px;">
+                <div class="col-xxl-6" style="padding: 0px;"><img src="assets/img/2.png" style="width: 636px;"></div>
+                <div class="col">
+                    <p><span style="color: rgb(0, 0, 0); background-color: transparent;">Then to start the actual scrapy project in the directory by searching back to the directory by typing “cd (folder name)” as done above, but with the names of the folders that you described. Once you are in the desired directory type “scrapy startproject (project_name)” ENTER. After letting the code run, if you check your project in file explorer you will see some newly added files.&nbsp;</span></p>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 5px;padding-top: 5px;">
+                <div class="col">
+                    <p style="margin: 0px;"><span style="color: rgb(0, 0, 0); background-color: transparent;">Route to the project name folder and open the “spiders” folder and add a new python file. For our documentation we will make a scraper that will extract a few quotes from a target website. It is very important to not include any spaces in the name of the file and to remember this name as this is the name of the “spider” that will “crawl” over the website and extract the information.&nbsp;</span></p>
+                </div>
+                <div class="col-xxl-7"><img width="481" height="281" src="assets/img/3.png" style="width: 760px;height: 293px;"></div>
+            </div>
+            <div class="row" style="padding-top: 5px;padding-bottom: 5px;">
+                <div class="col-xxl-6" style="padding: 0px;"><img src="assets/img/4.png" style="width: 655px;"></div>
+                <div class="col">
+                    <p style="margin: 0px;"><br><span style="color: rgb(0, 0, 0); background-color: transparent;">Open the python file in any python editor and this is where you will write the specific tasks that your spider will complete. Keeping the imports the same create a new class in the same format above. For now you can use the same code as us for the parse function but make sure the name of the spider is the same as the file name and the urls are any website that you would like to scrape.&nbsp;</span></p>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 5px;padding-bottom: 5px;">
+                <div class="col">
+                    <p style="margin: 0px;"><br><br><span style="color: rgb(0, 0, 0); background-color: transparent;">Go back into terminal and and go to the directory where the scrapy project name is using the same “cd (directory name)” steps done above. Then type “scrapy crawl (the name that you typed in the python file in the previous step)” ENTER.&nbsp;</span></p>
+                </div>
+                <div class="col-xxl-7"><img width="481" height="281" src="assets/img/5.png" style="width: 760px;"></div>
+            </div>
+            <div class="row" style="padding-top: 5px;padding-bottom: 5px;">
+                <div class="col" style="text-align: center;">
+                    <p style="margin: 0px;"><br><span style="color: rgb(0, 0, 0); background-color: transparent;">Then if you go back to the directory in file explorer you will see a browser executable file for every URL you added for your scraper.&nbsp;</span><br><br></p><img src="assets/img/6.png" style="width: 1116px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 style="text-align: center;">Try it Out!</h1>
                 </div>
             </div>
         </div>
